@@ -1,0 +1,35 @@
+{
+  "name": "nonthub",
+  "private": true,
+  "version": "0.4.4",
+  "description": "NontHub - GitHub app hub by Void for Windows and Android.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "tauri": "tauri",
+    "icons:build": "tauri icon public/brand/nonthub.png",
+    "windows:build": "npm run icons:build && tauri build --bundles msi",
+    "windows:dev": "tauri dev",
+    "android:init": "npm run icons:build && tauri android init",
+    "android:dev": "tauri android dev",
+    "android:build:apk": "tauri android build --debug --apk --target aarch64 --target armv7 --target x86_64"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "2.11.1",
+    "lucide-react": "0.468.0",
+    "react": "19.1.1",
+    "react-dom": "19.1.1"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "2.11.4",
+    "@types/react": "19.1.10",
+    "@types/react-dom": "19.1.7",
+    "@vitejs/plugin-react": "5.0.2",
+    "typescript": "5.9.2",
+    "vite": "7.1.5"
+  },
+  "author": "Void",
+  "homepage": "https://www.nont.me"
+}

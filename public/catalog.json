@@ -1,0 +1,43 @@
+{
+  "apps": [
+    {
+      "id": "nont",
+      "name": "NONT Music",
+      "subtitle": "Music, your way",
+      "description": "Install, launch and update NONT Music directly through package-safe GitHub Releases.",
+      "category": "Music",
+      "kind": "github-release",
+      "repository": "voidnont/NontMusic",
+      "featured": true,
+      "assetExtensions": [
+        ".exe",
+        ".msi"
+      ],
+      "website": "https://music.nont.me"
+    },
+    {
+      "id": "veil-browser",
+      "name": "Veil Browser",
+      "subtitle": "Private browsing by Void",
+      "description": "Install, launch and update Veil Browser directly from GitHub Releases.",
+      "category": "Web",
+      "kind": "github-release",
+      "repository": "voidnont/veilbrowser",
+      "featured": true,
+      "assetExtensions": [
+        ".exe",
+        ".msi"
+      ]
+    },
+    {
+      "id": "custom-downloads",
+      "name": "Downloads",
+      "subtitle": "Files and GitHub Releases",
+      "description": "Paste a direct URL or a GitHub repository. Repositories you add stay synced in your Library while NontHub tracks compatible release assets and downloads.",
+      "category": "Downloads",
+      "kind": "builtin",
+      "builtinRoute": "downloads",
+      "featured": false
+    }
+  ]
+}

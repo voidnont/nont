@@ -1,0 +1,32 @@
+.nonthub-logo-image,
+.app-icon.real-app-icon img,
+.mini-art img,
+.download-icon img,
+.update-app-icon,
+.github-repo-icon,
+.synced-source-icon img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  object-position: center;
+}
+
+.app-icon.real-app-icon img,
+.mini-art img,
+.download-icon img,
+.update-app-icon,
+.github-repo-icon,
+.synced-source-icon img {
+  object-fit: contain !important;
+}
+
+.icon-fallback-image {
+  object-fit: contain !important;
+  padding: 10% !important;
+  background: transparent !important;
+  opacity: .92;
+}
+
+.nonthub-logo-frame > .nonthub-logo-image {
+  object-fit: cover !important;
+}
